@@ -10,8 +10,8 @@ pipeline{
                     sh'rm -rf index.html'
                     git'https://github.com/iakashraut/docker-assign.git'
                     sh'chmod 755 index.html'
-                    sh'docker run -itdp 12000:80 bhide httpd'
-                    sh'docker cp /mnt/test3/index.html bhide: /usr/local/apache2/htdocs/
+                    sh'docker run -itdp 20000:80 bhide3 httpd'
+                    sh'docker cp /mnt/test3/index.html bhide3: /usr/local/apache2/htdocs/
                     
                     
                 }
